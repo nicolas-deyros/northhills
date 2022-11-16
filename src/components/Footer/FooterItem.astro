@@ -1,11 +1,13 @@
 ---
 export interface Props {
-	title: string
-	href: string
-	hrefText: string
+	title?: string
+	href?: string
+	hrefText?: string
+	href2?: string
+	hrefText2?: string
 }
 
-const { href, hrefText, title } = Astro.props
+const { href, hrefText, href2, hrefText2, title } = Astro.props
 ---
 
 <div>
@@ -14,5 +16,9 @@ const { href, hrefText, title } = Astro.props
 	<a
 		class="text-footer-link hover:text-footer-link-hover font-semibold"
 		href={href}>{hrefText}</a
+	>
+	<a
+		class="text-footer-link hover:text-footer-link-hover font-semibold"
+		href={href2}>{hrefText2}</a
 	>
 </div>

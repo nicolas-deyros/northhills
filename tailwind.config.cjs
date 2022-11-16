@@ -4,8 +4,10 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
+				'north-blue': '#001c47',
 				'footer-link': '#fff0d8',
 				'footer-link-hover': '#dd9933',
+				'footer-btn-hover': '#fff8ec',
 			},
 		},
 	},
