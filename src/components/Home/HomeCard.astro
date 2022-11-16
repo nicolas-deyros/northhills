@@ -1,0 +1,51 @@
+---
+import Container from '../Container.astro'
+import Card from '../Card.astro'
+import kinder from '../../assets/img/btn-kinder.jpg'
+import Primaria from '../../assets/img/btn-primaria.jpg'
+import Secundaria from '../../assets/img/btn-secundaria.png'
+import Intercambios from '../../assets/img/btn-nasa.jpg'
+import Ces from '../../assets/img/btn-ces.jpg'
+import Becas from '../../assets/img/btn-intercambios.jpg'
+---
+
+<Container>
+	<ul class="grid gap-4 grid-cols-3 grid-rows-2 my-10">
+		<Card
+			href="/niveles/kinder"
+			img={kinder}
+			alt="Kindergarden"
+			title="Kinder"
+		/>
+		<Card
+			href="/niveles/primaria"
+			img={Primaria}
+			alt="primaria"
+			title="primaria"
+		/>
+		<Card
+			href="/niveles/secundaria"
+			img={Secundaria}
+			alt="secundaria"
+			title="secundaria"
+		/>
+		<Card
+			href="/proyectos/intercambios"
+			img={Intercambios}
+			alt="intercambios"
+			title="intercambios"
+		/>
+		<Card
+			href="/el-colegio/cambridge"
+			img={Ces}
+			alt="cambridge english school"
+			title="cambridge english school"
+		/>
+		<Card
+			href="/el-colegio/becas-y-convenios"
+			img={Becas}
+			alt="becas"
+			title="becas y convenios"
+		/>
+	</ul>
+</Container>

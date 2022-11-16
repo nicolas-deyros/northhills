@@ -7,10 +7,14 @@ const isActive = href === Astro.url.pathname.replace(/\/$/, '')
 
 <a
 	href={href}
+	rel="prefetch"
 	class:list={[
-		'flex justify-center items-center font-semibold  hover:text-pink-600 gap-1',
-		{ 'text-pink-600 lg:underline lg:underline-offset-2': isActive },
-		{ 'text-rose-50': !isActive },
+		'flex justify-center items-center font-semibold  hover:text-sky-900 gap-1 uppercase',
+		{
+			'text-sky-900 decoration-sky-500/50 decoration-2 lg:underline lg:underline-offset-2':
+				isActive,
+		},
+		{ 'text-neutral-500': !isActive },
 	]}
 	{...props}>
 	<slot />

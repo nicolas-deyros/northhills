@@ -1,0 +1,57 @@
+---
+import Container from '../Container.astro'
+import FooterItem from './FooterItem.astro'
+
+const today = new Date()
+---
+
+<footer class="flex justify-center items-center py-10 bg-[#001c47] text-white">
+	<Container>
+		<div class="w-full text-center">
+			<dir>
+				Ruta Panamericana Ramal Pilar, Km 46 – Bajada Los Lagartos C. C. –
+				Vivaldi s/nº esquina Caamaño, Pilar (1629), Buenos Aires, Argentina
+			</dir>
+		</div>
+		<div class="w-full grid grid-cols-3 grid-rows-2">
+			<div>
+				<FooterItem
+					href="tel:+54 230 46660082304666008"
+					hrefText="+54 230 4666008"
+					title="teléfono"
+				/>
+				<FooterItem
+					href="mailto:admision@colegionorthhills.com.ar"
+					hrefText="admision@colegionorthhills.com.ar"
+					title="email"
+					><p>Florencia Zoia <br /> Secretaria General y de Admisiones</p>
+				</FooterItem>
+			</div>
+			<div>
+				<FooterItem
+					href="mailto:admision@colegionorthhills.com.ar"
+					hrefText="admision@colegionorthhills.com.ar"
+					title="horario de atención"
+					><p>Florencia Zoia <br /> Secretaria General y de Admisiones</p>
+				</FooterItem>
+			</div>
+			<div>
+				<FooterItem
+					href="tel:+54 230 46660082304666008"
+					hrefText="+54 230 4666008"
+					title="teléfono"
+				/>
+				<FooterItem
+					href="mailto:admision@colegionorthhills.com.ar"
+					hrefText="admision@colegionorthhills.com.ar"
+					title="email"
+					><p>Florencia Zoia <br /> Secretaria General y de Admisiones</p>
+				</FooterItem>
+			</div>
+
+			<div class="w-full text-center">
+				<p>&copy; {today.getFullYear()} All rights reserved.</p>
+			</div>
+		</div>
+	</Container>
+</footer>
