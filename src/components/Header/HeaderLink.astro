@@ -9,7 +9,7 @@ const isActive = href === Astro.url.pathname.replace(/\/$/, '')
 	href={href}
 	rel="prefetch"
 	class:list={[
-		'flex justify-center items-center font-semibold  hover:text-sky-900 gap-1 uppercase',
+		'flex justify-center items-center font-semibold hover:text-sky-900 gap-1 uppercase',
 		{
 			'text-sky-900 decoration-sky-500/50 decoration-2 lg:underline lg:underline-offset-2':
 				isActive,
