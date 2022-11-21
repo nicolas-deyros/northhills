@@ -1,0 +1,30 @@
+---
+const kinder = `<p>La primera infancia es un período clave en la historia de cada niño y genera huellas relevantes para su trayectoria personal y educativa futura. Es la etapa donde se sientan las bases del desarrollo cognitivo emocional y social.</p>
+<p>El nivel inicial está orientado al desarrollo integral y armónico de la personalidad del niño, a la formación básica de sus aptitudes potenciales, como la confianza en sí mismo, su fuerza y seguridad, conservando su capacidad de asombro y curiosidad, desarrollando su creatividad y autonomía, fomentando así la capacidad de generar un pensamiento bilingüe favoreciendo la expresión espontánea y la construcción del pensamiento.</p>`
+const primaria = `<p>El nivel primario abarca de los 6 a los 12 años. Es una etapa en la cual, en un marco de respeto, cariño y formación en valores, se fomenta y acompaña de manera personalizada el desarrollo de la autonomía, brindando un entorno propicio para aprender a aprender.</p>
+<p>Desde el primer ciclo trabajamos sobre el desarrollo socioemocional, en la formación del pensamiento lógico – matemático y la lectoescritura, apuntando a una educación integral bilingüe.</p>
+<p>Buscamos a partir de la motivación por el saber, la indagación, exploración, experimentación, formulación de hipótesis, la construcción del pensamiento crítico y el disfrute a través del aprendizaje.</p>`
+const secundaria = `<p>Los alumnos del nivel secundario acceden a una sólida formación académica y se preparan para continuar sus estudios universitarios en un recorrido que acompaña sus necesidades y contempla sus intereses a través de tres modalidades:</p>
+<ul>
+<li>Economía y Gestión de las Organizaciones</li>
+<li>Ciencias Naturales</li>
+<li>Humanidades y Ciencias Sociales</li>
+<ul>
+<p>El Programa de Formación en Valores y Habilidades Sociales permite el desarrollo de individuos íntegros, con sentido crítico y visión comunitaria.</p>
+
+<p>Como Colegio Cambridge, nuestros estudiantes pueden transitar esta línea de exámenes internacionales que acreditan nivel de idioma y posibilitan el ingreso a universidades en el extranjero.</p>
+
+<p>La Articulación de Contenidos con Universidades da acceso anticipado a materiales de mayor rigor científico, mejora la capacidad analítica y posibilita un acompañamiento personalizado en la transición escuela-universidad.</p>`
+---
+
+<div id="niveles__contenido"></div>
+
+<script>
+	let contenido = document.querySelector('#niveles__contenido')
+	if (location.pathname.indexOf('secundaria') > 1) {
+		contenido.innerHTML += `
+      <h1>secundaria</h1>
+      ${secundaria}
+    `
+	}
+</script>

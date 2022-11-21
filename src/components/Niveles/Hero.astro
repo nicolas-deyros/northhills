@@ -1,0 +1,18 @@
+---
+import { Picture } from '@astrojs/image/components'
+
+export interface Props {
+	img: string
+	alt: string
+}
+
+const { img, alt } = Astro.props
+---
+
+<Picture
+	src={img}
+	class="rounded mx-auto"
+	widths={[200, 400, 800]}
+	sizes="(max-width: 100%) 100vw, 1920px"
+	alt={alt}
+/>

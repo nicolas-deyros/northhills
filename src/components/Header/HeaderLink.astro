@@ -14,7 +14,7 @@ const isActive = href === Astro.url.pathname.replace(/\/$/, '')
 			'text-sky-900 decoration-sky-500/50 decoration-2 lg:underline lg:underline-offset-2':
 				isActive,
 		},
-		{ 'text-neutral-500': !isActive },
+		{ 'text-white': !isActive },
 	]}
 	{...props}>
 	<slot />
