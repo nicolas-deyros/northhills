@@ -19,6 +19,11 @@ import image from "@astrojs/image";
 import prefetch from "@astrojs/prefetch";
 
 // https://astro.build/config
+import vercel from "@astrojs/vercel/serverless";
+
+// https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), sitemap(), mdx(), react(), image(), prefetch()]
+  integrations: [tailwind(), sitemap(), mdx(), react(), image(), prefetch()],
+  output: "server",
+  adapter: vercel()
 });
